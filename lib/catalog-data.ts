@@ -178,9 +178,9 @@ export const INITIAL_CART_ITEMS: CartItem[] = [];
 export const STUDIO_DATA = {
   name: 'AaronInk Studio',
   headline: 'TATUAJES SEMIPERMANENTES (12-14 DÍAS)',
-  phone: '51947130790',
+  phone: '51983753468',
   phoneFormatted: '+51 983 753 468',
-  yapeNumber: '947130790',
+  yapeNumber: '983753468',
   yapeOwner: 'Samir Coronado',
   schedule: 'Lunes a Sábado 9:00 AM - 8:00 PM',
   trenSchedule: 'Lunes a Sábado · 4:00 p.m. a 7:00 p.m.',
