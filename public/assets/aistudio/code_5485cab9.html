@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Oswald:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'secondary-fixed': '#6bff8f', 'on-tertiary-container': '#ffede6', 'secondary': '#4ae176', 'tertiary-fixed': '#ffdbcd', 'on-tertiary': '#581e00', 'primary-fixed': '#dbe1ff', 'error-container': '#93000a', 'on-secondary': '#003915', 'surface-container-low': '#1a1c1f', 'on-primary': '#002a78', 'surface-container-lowest': '#0c0e11', 'surface-tint': '#b4c5ff', 'tertiary-container': '#bc4800', 'tertiary-fixed-dim': '#ffb596', 'surface-container-high': '#282a2d', 'primary-container': '#2563eb', 'surface-container': '#1e2023', 'inverse-surface': '#e2e2e6', 'on-primary-fixed-variant': '#003ea8', 'primary': '#b4c5ff', 'inverse-primary': '#0053db', 'on-surface-variant': '#c3c6d7', 'secondary-container': '#00b954', 'on-background': '#e2e2e6', 'secondary-fixed-dim': '#4ae176', 'surface-variant': '#333538', 'outline': '#8d90a0', 'surface': '#111317', 'inverse-on-surface': '#2f3034', 'surface-dim': '#111317', 'on-secondary-fixed': '#002109', 'on-surface': '#e2e2e6', 'surface-bright': '#37393d', 'tertiary': '#ffb596', 'on-error-container': '#ffdad6', 'on-error': '#690005', 'surface-container-highest': '#333538', 'error': '#ffb4ab', 'primary-fixed-dim': '#b4c5ff', 'on-tertiary-fixed': '#360f00', 'on-primary-fixed': '#00174b', 'on-secondary-container': '#004119', 'on-secondary-fixed-variant': '#005321', 'outline-variant': '#434655', 'background': '#111317', 'on-primary-container': '#eeefff', 'on-tertiary-fixed-variant': '#7d2d00' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'margin-desktop': '3rem', 'space-xl': '2.5rem', 'space-md': '1rem', 'space-xs': '0.25rem', 'gutter': '1rem', 'margin': '1rem', 'space-lg': '1.5rem', 'space-sm': '0.5rem', 'gutter-desktop': '1.5rem', 'margin-tablet': '2rem' }, fontFamily: { 'body-md': ['Hanken Grotesk'], 'display': ['Oswald'], 'display-mobile': ['Oswald'], 'headline-lg': ['Oswald'], 'headline-md': ['Oswald'], 'headline-sm': ['Oswald'], 'label-sm': ['Hanken Grotesk'], 'body-sm': ['Hanken Grotesk'], 'headline-lg-mobile': ['Oswald'], 'body-lg': ['Hanken Grotesk'], 'label-md': ['Hanken Grotesk'] }, fontSize: { 'body-md': ['1rem', { 'lineHeight': '1.5rem', 'fontWeight': '400' }], 'display': ['4.5rem', { 'lineHeight': '4.75rem', 'letterSpacing': '-0.02em', 'fontWeight': '700' }], 'display-mobile': ['2.75rem', { 'lineHeight': '3rem', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'headline-lg': ['3rem', { 'lineHeight': '3.25rem', 'letterSpacing': '0.01em', 'fontWeight': '600' }], 'headline-md': ['2rem', { 'lineHeight': '2.25rem', 'letterSpacing': '0.02em', 'fontWeight': '600' }], 'headline-sm': ['1.375rem', { 'lineHeight': '1.625rem', 'letterSpacing': '0.03em', 'fontWeight': '500' }], 'label-sm': ['0.75rem', { 'lineHeight': '0.875rem', 'letterSpacing': '0.1em', 'fontWeight': '600' }], 'body-sm': ['0.875rem', { 'lineHeight': '1.25rem', 'fontWeight': '400' }], 'headline-lg-mobile': ['2rem', { 'lineHeight': '2.25rem', 'letterSpacing': '0.01em', 'fontWeight': '600' }], 'body-lg': ['1.125rem', { 'lineHeight': '1.75rem', 'fontWeight': '400' }], 'label-md': ['0.875rem', { 'lineHeight': '1rem', 'letterSpacing': '0.08em', 'fontWeight': '600' }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="catalogos" href="#"><img alt="AaronInk Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBBBE6TALuh36vfC1znN4dI4KoQP4BAa0JDIxG0SwkqHWTYzY8hfGKhCudG0f-l3C6AHlSEeUwsi7LhyggXtUVkJNOd0ysX3LYI_EsfoptiPlOhpM_LCqaSgDNxjRNdft9fywt3COMUctd2PnLa_9VzLQlj9201gZEI3GPdfopn90ddO39OvpYVMwD6ICwr8jDZp57qqErLu396nqd6rhd0hoevNLcIxeGfAptUuTvd"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-wider leading-none">AaronInk</span><span class="font-label-sm text-label-sm uppercase text-primary tracking-widest leading-tight mt-space-xs hidden sm:inline-block">Tatuajes Semipermanentes (12-14 Días)</span></div></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-none"><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="catalogos" href="#catalogos">Catálogos</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="mapa-corporal" href="#mapa-cuerpo">Mapa Corporal</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="como-funciona" href="#como-funciona">Cómo Funciona</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="entregas-y-pagos" href="#pagos">Entregas y Pagos</a></nav><div class="flex items-center gap-space-sm md:gap-space-md"><a class="bg-secondary-container hover:bg-secondary text-on-secondary font-headline-sm text-label-md uppercase tracking-wider px-space-md py-space-sm rounded-none flex items-center gap-space-xs transition-colors shadow-sm" href="https://wa.me/51947130790" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span><span class="hidden md:inline font-semibold">WhatsApp</span></a><button aria-label="Ver Carrito" class="relative p-space-sm bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-none flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute -top-1.5 -right-1.5 min-w-[20px] h-5 px-1 bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold flex items-center justify-center rounded-none">0</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow & Specimen Header -->
+<section class="relative w-full bg-surface-container-lowest px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl overflow-hidden">
+<div class="absolute -top-32 -left-20 w-96 h-96 bg-primary-container/10 blur-3xl pointer-events-none rounded-full"></div>
+<div class="absolute top-1/2 right-0 w-[420px] h-[420px] bg-secondary-container/5 blur-3xl pointer-events-none rounded-full"></div>
+<div class="relative z-10 max-w-7xl mx-auto flex flex-col gap-space-lg">
+<!-- Breadcrumb & Catalog Switcher Dropdown -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-label-sm text-label-sm uppercase tracking-widest text-outline">
+<a class="hover:text-primary transition-colors" href="#">Inicio</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#catalogos">Catálogos</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">Brazo Completo</span>
+</nav>
+<!-- Rapid Switcher -->
+<div class="relative inline-flex items-center bg-surface-container-high px-space-sm py-space-xs gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">folder_open</span>
+<label class="sr-only" for="catalogSwitcher">Cambiar de catálogo</label>
+<select class="bg-transparent font-label-sm text-label-sm uppercase tracking-wider text-on-surface focus:outline-none cursor-pointer pr-space-md" id="catalogSwitcher">
+<option class="bg-surface-container-high text-on-surface" selected="" value="brazo">01. Brazo Completo (Sleeve Flash)</option>
+<option class="bg-surface-container-high text-on-surface" value="antebrazo">02. Antebrazo &amp; Muñeca</option>
+<option class="bg-surface-container-high text-on-surface" value="pecho">03. Pecho &amp; Clavícula</option>
+<option class="bg-surface-container-high text-on-surface" value="espalda">04. Espalda Completa (Full Back)</option>
+<option class="bg-surface-container-high text-on-surface" value="pierna">05. Pierna &amp; Gemelo</option>
+<option class="bg-surface-container-high text-on-surface" value="minimal">06. Micro Realismo &amp; Minimal</option>
+<option class="bg-surface-container-high text-on-surface" value="cuello">07. Cuello &amp; Manos Especial</option>
+</select>
+</div>
+</div>
+<!-- Main Title & Metadata Badges -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="inline-block w-2.5 h-2.5 bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Specimen Sheet #ARK-SLV-08</span>
+</div>
+<h1 class="font-display text-display leading-tight uppercase text-on-surface tracking-tight">
+          Tatuaje de Brazo Completo
+          <span class="block text-primary text-headline-lg font-headline-lg tracking-wider opacity-90">(Sleeve Flash Collection)</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Matriz de plantillas completas de manga continua diseñadas con pigmento jagua azul-carbón de absorción epidérmica. Estética de alto contraste: degradados de aguja curva y líneas sólidas calibradas para 14 días intactos.
+        </p>
+</div>
+<!-- Spec Badges Row -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+<span>Duración: 12-14 Días Clínicos</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">view_quilt</span>
+<span>+85 Diseños Disponibles</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">ink_pen</span>
+<span>Acabado Tinta Negra &amp; Gris Intensa</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+<span>100% Resistente al Agua y Sudor</span>
+</div>
+</div>
+<!-- Callout Box: Direct Screenshot Action Prompt -->
+<div class="relative bg-surface-container-high p-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 flex-shrink-0 bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">photo_camera</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm uppercase text-on-surface">¿Te gustó un diseño específico?</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Toca o haz clic en cualquier plantilla para verla en pantalla completa, toma captura o usa el botón directo para pedirlo con su código por WhatsApp.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider bg-surface-container px-space-sm py-space-xs shrink-0">
+<span class="material-symbols-outlined text-[18px]">touch_app</span>
+<span>Modo Lightbox Activo</span>
+</div>
+</div>
+<!-- Fast Action Sticky Bar / Header CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md p-space-md bg-surface-container-low shadow-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-display text-headline-md uppercase text-on-surface">Pack Brazo Completo</span>
+<span class="text-outline font-body-sm">|</span>
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">S/ 45.00 c/lámina</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex-1 sm:flex-initial bg-primary-container hover:bg-primary-fixed text-on-primary-container hover:text-on-primary font-headline-sm text-label-md uppercase tracking-wider px-space-md py-space-sm flex items-center justify-center gap-space-xs transition-colors shadow-sm" id="addCatalogBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+<span>Agregar Catálogo al Pedido (+1)</span>
+</button>
+<a class="flex-1 sm:flex-initial bg-secondary-container hover:bg-secondary text-on-secondary font-headline-sm text-label-md uppercase tracking-wider px-space-md py-space-sm flex items-center justify-center gap-space-xs transition-colors shadow-sm" href="https://wa.me/51947130790?text=Hola%20AaronInk,%20quiero%20el%20Cat%C3%A1logo%20Completo%20de%20Tatuaje%20de%20Brazo%20(Sleeve%20Flash%20Collection)" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Pedir por WhatsApp Directo</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Flash Gallery Filter Tabs & Technical Bar -->
+<section class="w-full bg-surface-container px-margin md:px-margin-tablet lg:px-margin-desktop py-space-sm">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-xs" id="galleryFilters">
+<button class="filter-btn bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider px-space-sm py-space-xs" data-filter="all" type="button">Todos (12)</button>
+<button class="filter-btn bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider px-space-sm py-space-xs transition-colors" data-filter="oriental" type="button">Oriental &amp; Dragón</button>
+<button class="filter-btn bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider px-space-sm py-space-xs transition-colors" data-filter="chicano" type="button">Realismo Chicano</button>
+<button class="filter-btn bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider px-space-sm py-space-xs transition-colors" data-filter="geometric" type="button">Geometría Sagrada</button>
+<button class="filter-btn bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider px-space-sm py-space-xs transition-colors" data-filter="nordic" type="button">Nórdico &amp; Rúnico</button>
+<button class="filter-btn bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider px-space-sm py-space-xs transition-colors" data-filter="biomech" type="button">Biomecánico</button>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm uppercase tracking-widest text-outline">
+<span>Escala 1:1 Cobertura Brazo</span>
+<span class="w-1.5 h-1.5 bg-secondary"></span>
+<span class="text-secondary">Stock Inmediato Lima</span>
+</div>
+</div>
+</section>
+<!-- MASONRY GALLERY SECTION (Pure Inky Tiled Matrix) -->
+<section class="w-full bg-background px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+<div class="max-w-7xl mx-auto">
+<!-- Masonry Grid with Tailwind Columns for High Performance -->
+<div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-space-md [column-fill:_balance] space-y-space-md" id="masonryContainer">
+<!-- CARD 1: Manga Oriental Ryu (Tall) -->
+<div class="break-inside-avoid flash-card group relative bg-surface-container-low transition-all duration-150 overflow-hidden" data-category="oriental" data-code="#BRAZO-01" data-dims="48 x 17 cm · Brazo Entero" data-style="Oriental Clásico / Blackwork" data-title="Dragón Celestial &amp; Olas Irezumi">
+<div class="relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Vertical blackwork tattoo flash design of an intense Japanese oriental dragon coiling around waves and chrysanthemum blossoms, deep black ink stencil on skin tone background, dark brutalist studio lighting, crisp high-contrast linework." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxZDDN8YJaLFt1Pa9fxDXCB6wrjWjirhh-dUPzqntcMajv00QJQ6ubXK9sDkCkNRI9RbTbRP_CY2iVP-0ZX3GQCcMt-xZ6RStIm3EPMjVnrDCtsy469nyZtaIj0voYwhAHBhNux1PjmiUmv86f8_J6pR0sPSK3FnxkVa3qCiYj5fO2K3tttvVzxhZSKP8J69_E4UdKxTPNn1vbIupKc4OvVZAKY99T0d47pCzkCiY"/>
+<div class="absolute top- space-xs left-space-xs bg-surface-container-lowest/90 px-space-xs py-0.5 text-primary font-label-sm text-label-sm uppercase tracking-widest">
+              #BRAZO-01
+            </div>
+<div class="absolute top-space-xs right-space-xs bg-surface-container-high/90 text-on-surface font-label-sm text-label-sm uppercase px-space-xs py-0.5">
+              48 x 17 cm
+            </div>
+<!-- Overlay Action Buttons -->
+<div class="absolute inset-0 bg-surface-container-lowest/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-space-sm gap-space-xs">
+<button class="open-lightbox-btn w-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+<span>Ver Pantalla Completa</span>
+</button>
+<button class="quick-order-btn w-full bg-secondary-container text-on-secondary font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Pedir este por WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface leading-tight">Dragón Celestial Irezumi</span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Manga Integral</span>
+<span class="text-primary font-bold">14 Días Fijación</span>
+</div>
+</div>
+</div>
+<!-- CARD 2: Realismo Chicano (Standard) -->
+<div class="break-inside-avoid flash-card group relative bg-surface-container-low transition-all duration-150 overflow-hidden" data-category="chicano" data-code="#BRAZO-02" data-dims="45 x 15 cm · Cobertura Completa" data-style="Realismo Chicano Black &amp; Grey" data-title="Diosa Catrina &amp; Rosas de Sombras">
+<div class="relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dark realistic tattoo sleeve flash design featuring a detailed Chicano style Catrina face with ornate skull makeup, deep black and grey wash shading, surrounded by velvety realistic roses, high resolution stencil presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHmTrekRx0iu3J9S5Hu1Kcp6C5YyXlOl_X3n7W51PtzKIRUrr9AM7TNy6YyNE8Qavr8EOJwYqDqY_1zUO3CRTZoyv1XHfP841AyoQlaQo2SLfCVYvp1UuMw3lpNVcMYYoC_E7l1GMXZ2vcWlv0OKHMNhRy7wZeWMmYjKwPHsMgN17Or3Ux0dMNw7W-pJb09VCeIL7qzmOxT8dGmRGk0IJhTkj1sFHA9GwvIDwLmtM"/>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-xs py-0.5 text-primary font-label-sm text-label-sm uppercase tracking-widest">
+              #BRAZO-02
+            </div>
+<div class="absolute top-space-xs right-space-xs bg-surface-container-high/90 text-on-surface font-label-sm text-label-sm uppercase px-space-xs py-0.5">
+              45 x 15 cm
+            </div>
+<div class="absolute inset-0 bg-surface-container-lowest/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-space-sm gap-space-xs">
+<button class="open-lightbox-btn w-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+<span>Ver Pantalla Completa</span>
+</button>
+<button class="quick-order-btn w-full bg-secondary-container text-on-secondary font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Pedir este por WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface leading-tight">Diosa Catrina &amp; Rosas</span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Chicano Realismo</span>
+<span class="text-primary font-bold">14 Días Fijación</span>
+</div>
+</div>
+</div>
+<!-- CARD 3: Geometría Sagrada & Mandalas (Very Tall) -->
+<div class="break-inside-avoid flash-card group relative bg-surface-container-low transition-all duration-150 overflow-hidden" data-category="geometric" data-code="#BRAZO-03" data-dims="50 x 16 cm · Brazo Entero" data-style="Dotwork Geométrico Preciso" data-title="Geometría Fractal &amp; Metatrón Sleeve">
+<div class="relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Technical sacred geometry tattoo flash layout spanning a full sleeve, cube of Metatron, intricate dotwork mandalas and optical fractal linework, surgical precision black ink lines on crisp dark studio backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVo-Smd_I3Gh6Z-BV-anK_qmbllGpppF3zvTchSiQbiHMuPCvWRzmMTwiecOJ7DYxi_6FRen7f88mWoyrINplgWe9Nx1pFLzytmEBPVJhSOCE-8lYgMbC3qhqRL3X_E6GD-BKkpfiej3ToBwQuSn-_JMbTfvcTnmc8p5D9V5_9WjpKAkOWTVw6KM24JCahlVLxt6uxLewLN4GxMf8WLwyzY7207icX2pE9UIt1pAU"/>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-xs py-0.5 text-primary font-label-sm text-label-sm uppercase tracking-widest">
+              #BRAZO-03
+            </div>
+<div class="absolute top-space-xs right-space-xs bg-surface-container-high/90 text-on-surface font-label-sm text-label-sm uppercase px-space-xs py-0.5">
+              50 x 16 cm
+            </div>
+<div class="absolute inset-0 bg-surface-container-lowest/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-space-sm gap-space-xs">
+<button class="open-lightbox-btn w-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+<span>Ver Pantalla Completa</span>
+</button>
+<button class="quick-order-btn w-full bg-secondary-container text-on-secondary font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Pedir este por WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface leading-tight">Metatrón Fractal &amp; Dotwork</span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Geometría Sagrada</span>
+<span class="text-primary font-bold">14 Días Fijación</span>
+</div>
+</div>
+</div>
+<!-- CARD 4: Nórdico Rúnico (Medium) -->
+<div class="break-inside-avoid flash-card group relative bg-surface-container-low transition-all duration-150 overflow-hidden" data-category="nordic" data-code="#BRAZO-04" data-dims="46 x 15 cm · Cobertura Completa" data-style="Nórdico Oscuro &amp; Runas" data-title="Yggdrasil &amp; Cuervos de Odín">
+<div class="relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Norse mythology full sleeve temporary tattoo stencil design, Yggdrasil tree with roots intertwined with runic compass Vegvisir, Huginn and Muninn ravens flying downward, intense charcoal blackwork art." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlJpHWQwXVHjQ4X4gJVwWWhc5kXTm39e7mBo8snHKad9pwJn3I6j0PLqlSX-z6_lEqgrQR3Xqc3kbnWq4hbWr6JndsgK8w3tqEj6ElbiAxspTw4Jd3yfpLxE4i3XYsuV37lomseNo74STOLkLG70isubp0sycAE8jnbAU6xreVhsIEQvPSaNP5Np3u5s47zvumbYCzSa6694dqFbtHzxTrPVhx4rEGIos8rNrU2EI"/>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-xs py-0.5 text-primary font-label-sm text-label-sm uppercase tracking-widest">
+              #BRAZO-04
+            </div>
+<div class="absolute top-space-xs right-space-xs bg-surface-container-high/90 text-on-surface font-label-sm text-label-sm uppercase px-space-xs py-0.5">
+              46 x 15 cm
+            </div>
+<div class="absolute inset-0 bg-surface-container-lowest/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-space-sm gap-space-xs">
+<button class="open-lightbox-btn w-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+<span>Ver Pantalla Completa</span>
+</button>
+<button class="quick-order-btn w-full bg-secondary-container text-on-secondary font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Pedir este por WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface leading-tight">Yggdrasil &amp; Cuervos Odín</span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Nórdico Rúnico</span>
+<span class="text-primary font-bold">14 Días Fijación</span>
+</div>
+</div>
+</div>
+<!-- CARD 5: Serpientes & Dagas (Tall) -->
+<div class="break-inside-avoid flash-card group relative bg-surface-container-low transition-all duration-150 overflow-hidden" data-category="chicano" data-code="#BRAZO-05" data-dims="47 x 16 cm · Brazo Entero" data-style="Neo-Tradicional Blackwork" data-title="Víbora de Cascabel &amp; Daga Gótica">
+<div class="relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Neo-traditional blackwork sleeve tattoo flash design of a coiled venomous viper serpent wrapped around an ornamental medieval gothic dagger, thorn vines, botanical leaves, solid rich black pigment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuTv-Tq5LqW8TLHDVZRMtMIOVJzfSPEmqsEBCjM0M9pYtK3zOsWMXZhOCgQvgJKcLuLowSqpkvoBHBf3SCDSHu3qvGKyH1Vo1AKIISponHl-gWgQzwXg_zYx_uFVy0ZE7q9Rc6pnoV5XoecDn63L3B4NX0ibMbJ_izABXCQd1RnC20xgSaElXRdv4ABigb5n234oIMsinIeO1h2hj69j8g3hqhL0z0OhsItjvvNW8"/>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-xs py-0.5 text-primary font-label-sm text-label-sm uppercase tracking-widest">
+              #BRAZO-05
+            </div>
+<div class="absolute top-space-xs right-space-xs bg-surface-container-high/90 text-on-surface font-label-sm text-label-sm uppercase px-space-xs py-0.5">
+              47 x 16 cm
+            </div>
+<div class="absolute inset-0 bg-surface-container-lowest/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-space-sm gap-space-xs">
+<button class="open-lightbox-btn w-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+<span>Ver Pantalla Completa</span>
+</button>
+<button class="quick-order-btn w-full bg-secondary-container text-on-secondary font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Pedir este por WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface leading-tight">Víbora &amp; Daga Gótica</span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Neo-Tradicional</span>
+<span class="text-primary font-bold">14 Días Fijación</span>
+</div>
+</div>
+</div>
+<!-- CARD 6: Biomecánico Cyberpunk (Standard) -->
+<div class="break-inside-avoid flash-card group relative bg-surface-container-low transition-all duration-150 overflow-hidden" data-category="biomech" data-code="#BRAZO-06" data-dims="45 x 15 cm · Brazo Completo" data-style="Biomecánico Realista" data-title="Exoesqueleto Hidráulico Cyberpunk">
+<div class="relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Biomechanical sleeve tattoo flash stencil showing exposed hydraulic pistons, metallic cybernetic cables, carbon fiber weave under simulated torn skin, precise dark technical tattoo linework." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6-sk0NGdwZQzzqme273FNTEWfyDk1Y3m6N5ZDvQw51cSR8IDcy8dmWcd_X0ZD13iadU0JLxbtNyKV_HA9T_opMZF8Td_2Yl8vif4c1l2rd-n0mNtmR7bp7506O6FxIpI_0xITuFqhXJxKTnDkDUYd0SwNJEEcDzN4Xt0j_LdLjJ-TnS8fPSvqTc5_zdAmO49B6srnd_JJNv2-M2UkEFHkV3oZf91zyCfT-weX444"/>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-xs py-0.5 text-primary font-label-sm text-label-sm uppercase tracking-widest">
+              #BRAZO-06
+            </div>
+<div class="absolute top-space-xs right-space-xs bg-surface-container-high/90 text-on-surface font-label-sm text-label-sm uppercase px-space-xs py-0.5">
+              45 x 15 cm
+            </div>
+<div class="absolute inset-0 bg-surface-container-lowest/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-space-sm gap-space-xs">
+<button class="open-lightbox-btn w-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+<span>Ver Pantalla Completa</span>
+</button>
+<button class="quick-order-btn w-full bg-secondary-container text-on-secondary font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Pedir este por WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface leading-tight">Biomecánico Hidráulico</span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Cyberpunk Industrial</span>
+<span class="text-primary font-bold">14 Días Fijación</span>
+</div>
+</div>
+</div>
+<!-- CARD 7: Oriental Tigre & Samurai (Tall) -->
+<div class="break-inside-avoid flash-card group relative bg-surface-container-low transition-all duration-150 overflow-hidden" data-category="oriental" data-code="#BRAZO-07" data-dims="49 x 16 cm · Brazo Entero" data-style="Irezumi Japonés" data-title="Tigre de Bengala &amp; Máscara Hannya">
+<div class="relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Traditional Japanese Irezumi sleeve stencil design featuring a fierce roaring tiger, cherry blossom sakura petals flowing, and a detailed Hannya demon mask at the shoulder, dark brutalist black ink stencil." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8HmfqqCrXE9-nwWDXqK3UPbnSK_y4dAb2kpv4GZyC6UCc2trjdYAbUFDpy5Me8AbwbswuqI-S-5Fqzjld7jtCGZSwmn2ePI9Jh_1tXJ4IMGGiAhD-pfEheO6oR1Byt4NfT7UpTfVptlt0JPUODP2RjkvYYjXTwy9xHvsAiy3EKcVDKMefUYQ30Nx8s-E_PBuOyzDJ6Hq4VgHX39b9T54vmN1hRlu4ogBS9nGvPqU"/>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-xs py-0.5 text-primary font-label-sm text-label-sm uppercase tracking-widest">
+              #BRAZO-07
+            </div>
+<div class="absolute top-space-xs right-space-xs bg-surface-container-high/90 text-on-surface font-label-sm text-label-sm uppercase px-space-xs py-0.5">
+              49 x 16 cm
+            </div>
+<div class="absolute inset-0 bg-surface-container-lowest/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-space-sm gap-space-xs">
+<button class="open-lightbox-btn w-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+<span>Ver Pantalla Completa</span>
+</button>
+<button class="quick-order-btn w-full bg-secondary-container text-on-secondary font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Pedir este por WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface leading-tight">Tigre Irezumi &amp; Hannya</span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Oriental Clásico</span>
+<span class="text-primary font-bold">14 Días Fijación</span>
+</div>
+</div>
+</div>
+<!-- CARD 8: Reloj de Arena & León (Medium) -->
+<div class="break-inside-avoid flash-card group relative bg-surface-container-low transition-all duration-150 overflow-hidden" data-category="chicano" data-code="#BRAZO-08" data-dims="45 x 15 cm · Brazo Entero" data-style="Black &amp; Grey Realismo" data-title="León Realista &amp; Reloj de Bolsillo">
+<div class="relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Black and grey realistic full sleeve tattoo flash of an imposing male lion crown, Roman numeral antique pocket watch, gears, and filigree clouds, smooth micro-shading transitions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhgsuUVQKZpuMLWoG-mX5kRSzsV0pfMrP2RQ__HPoBhSELh2plR-JoGLj5892JvmPXQk5UlJc2XueE07vLBSVRYkMu70dneWCz-dj0bG_NcSIyFZvW5SFnIuXLKT6HdJRGXOmo2dWNs8CPUHG_tNMtHmJXbZJeytd4nQ-oX09Im1O1FdJs33BYBITJP2OjaRHvuZVJkE4XuvpIPwZM4t-kFedBo-0eDOjyi0ZnBQw"/>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-xs py-0.5 text-primary font-label-sm text-label-sm uppercase tracking-widest">
+              #BRAZO-08
+            </div>
+<div class="absolute top-space-xs right-space-xs bg-surface-container-high/90 text-on-surface font-label-sm text-label-sm uppercase px-space-xs py-0.5">
+              45 x 15 cm
+            </div>
+<div class="absolute inset-0 bg-surface-container-lowest/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-space-sm gap-space-xs">
+<button class="open-lightbox-btn w-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+<span>Ver Pantalla Completa</span>
+</button>
+<button class="quick-order-btn w-full bg-secondary-container text-on-secondary font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Pedir este por WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface leading-tight">León Realista &amp; Horas</span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Realismo Sombras</span>
+<span class="text-primary font-bold">14 Días Fijación</span>
+</div>
+</div>
+</div>
+<!-- CARD 9: Geometría Tribal Polinesia / Marquesan (Tall) -->
+<div class="break-inside-avoid flash-card group relative bg-surface-container-low transition-all duration-150 overflow-hidden" data-category="geometric" data-code="#BRAZO-09" data-dims="48 x 16 cm · Manga Completa" data-style="Polinesio Blackwork Sólido" data-title="Tribal Polinesio &amp; Guerreros Tiki">
+<div class="relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Traditional Polynesian Marquesan tribal sleeve tattoo flash with bold geometric motifs, shark teeth patterns, spearhead rows, and warrior Tiki symbols in heavy pitch black ink." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOMI_HZ8nTIzZjFiCjZ63fIXMQe92m_ijcpFpKNR5HdKJ2h9QcVUlE9prGC2QYsI1bqNOhbL7jjSEQvMWDd6EVYaJs-HasZxpfBlKyHHYpgGK-eLvOksioMjp5H3X-d2Y9PiKLXu-gW6rooJ56PDxHJ0i3CxSAugO6ZQzgu0xfgwE4dNjn-ssMjjivi9BWAefDKw-NECQk6OIrsN8sIe9vVpkxK4Hbx7lpUxl3e70"/>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-xs py-0.5 text-primary font-label-sm text-label-sm uppercase tracking-widest">
+              #BRAZO-09
+            </div>
+<div class="absolute top-space-xs right-space-xs bg-surface-container-high/90 text-on-surface font-label-sm text-label-sm uppercase px-space-xs py-0.5">
+              48 x 16 cm
+            </div>
+<div class="absolute inset-0 bg-surface-container-lowest/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-space-sm gap-space-xs">
+<button class="open-lightbox-btn w-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+<span>Ver Pantalla Completa</span>
+</button>
+<button class="quick-order-btn w-full bg-secondary-container text-on-secondary font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Pedir este por WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface leading-tight">Tribal Marquesano Manga</span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Blackwork Tribal</span>
+<span class="text-primary font-bold">14 Días Fijación</span>
+</div>
+</div>
+</div>
+<!-- CARD 10: Guerrero Vikingo Valhalla (Standard) -->
+<div class="break-inside-avoid flash-card group relative bg-surface-container-low transition-all duration-150 overflow-hidden" data-category="nordic" data-code="#BRAZO-10" data-dims="46 x 15 cm · Cobertura Completa" data-style="Black &amp; Grey Realismo Mitológico" data-title="Guerrero Berserker &amp; Yelmo Nórdico">
+<div class="relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Intense Viking berserker warrior sleeve tattoo sheet, wearing horned chainmail armor, holding an engraved battle axe with runic engravings and smoke wisps, high contrast dark atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAktLclvr9CdfOSGkEJubOyRdyrpXfDR4e5q30cS7zVLIDr7f4GdGLa5Np-DR5fo9g4hC87ucD9RQpvdrdFoaBVqxsT1OUp9g1Hcqh315IrXCOFUJY_bUMH6wYEunEuNMV2csP1EM27EOWw8A9ppjWWIlmvphtheUnKGgaah_5ecihJoi3HVT6g86OFSIZ85m5JjG_z0Ytu1TnZMrf6Towy-NSQ6toC54Orj8ZulTM"/>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-xs py-0.5 text-primary font-label-sm text-label-sm uppercase tracking-widest">
+              #BRAZO-10
+            </div>
+<div class="absolute top-space-xs right-space-xs bg-surface-container-high/90 text-on-surface font-label-sm text-label-sm uppercase px-space-xs py-0.5">
+              46 x 15 cm
+            </div>
+<div class="absolute inset-0 bg-surface-container-lowest/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-space-sm gap-space-xs">
+<button class="open-lightbox-btn w-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+<span>Ver Pantalla Completa</span>
+</button>
+<button class="quick-order-btn w-full bg-secondary-container text-on-secondary font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Pedir este por WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface leading-tight">Berserker &amp; Valhalla</span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Nórdico Mítico</span>
+<span class="text-primary font-bold">14 Días Fijación</span>
+</div>
+</div>
+</div>
+<!-- CARD 11: Manga Biomecánica Alien / Giger Style (Very Tall) -->
+<div class="break-inside-avoid flash-card group relative bg-surface-container-low transition-all duration-150 overflow-hidden" data-category="biomech" data-code="#BRAZO-11" data-dims="51 x 17 cm · Brazo Entero" data-style="Dark Bio-Organic" data-title="Biomecánica Orgánica Xenomorfa">
+<div class="relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dark bio-organic tattoo sleeve stencil inspired by HR Giger, ribbed biomechanical spinal cords, interlocking metallic exoskeleton ribs and alien textures, deep monochromatic black ink." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpbWTSp_2beoMG69mWGQfeppMfRWXCpeEP0T7mkojx0m061E7gb57DOGWSOgqW-RM3e1q12XIaRuWzu1UyFUGpEGXIBDWNf0rPleJF76wNOI0zVe7fLjB2iEY7Ka2UACBcmCwq1WS3FtU9qqCM0iBrOraJjyaNcTAxc9OW37LEnKJB10913-G86gK8hWAVPiu68Epfp2bhvwhIVE9hsQHhezS-i9DFxrKzXXAmslQ"/>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-xs py-0.5 text-primary font-label-sm text-label-sm uppercase tracking-widest">
+              #BRAZO-11
+            </div>
+<div class="absolute top-space-xs right-space-xs bg-surface-container-high/90 text-on-surface font-label-sm text-label-sm uppercase px-space-xs py-0.5">
+              51 x 17 cm
+            </div>
+<div class="absolute inset-0 bg-surface-container-lowest/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-space-sm gap-space-xs">
+<button class="open-lightbox-btn w-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+<span>Ver Pantalla Completa</span>
+</button>
+<button class="quick-order-btn w-full bg-secondary-container text-on-secondary font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Pedir este por WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface leading-tight">Bio-Orgánico Xenomorfo</span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Bio-Mecánica Giger</span>
+<span class="text-primary font-bold">14 Días Fijación</span>
+</div>
+</div>
+</div>
+<!-- CARD 12: Carpa Koi Oriental & Flor de Loto (Standard) -->
+<div class="break-inside-avoid flash-card group relative bg-surface-container-low transition-all duration-150 overflow-hidden" data-category="oriental" data-code="#BRAZO-12" data-dims="45 x 15 cm · Brazo Entero" data-style="Oriental Clásico Shading" data-title="Pez Koi Ascendente &amp; Loto Sagrado">
+<div class="relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Traditional Japanese Koi fish ascending rapid waterfall with lotus flowers and water swirls, Japanese sleeve flash sheet composition with heavy sumi ink shading and crisp outlines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXNOXfJpE1eu8_zrfXjEPcG57gqMC2kl8pi6h3Vua-16yVFK1d5oSb6njbue-hu4w9qmwvmLpJSbJXXsr1HogjJrekrEwvuNTryAYpc2fRGP6lcAuJtltPMNR6O17hHdMR2T7SSry4QSO5UtWPsEwdQreyxOi51aO-GIJVQRwIAgTEu108jafhF_nqY1tKNNHp56BjAsq50Nz4IRQgp8o7BNVCICKL7Pa36FxjiVc"/>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-xs py-0.5 text-primary font-label-sm text-label-sm uppercase tracking-widest">
+              #BRAZO-12
+            </div>
+<div class="absolute top-space-xs right-space-xs bg-surface-container-high/90 text-on-surface font-label-sm text-label-sm uppercase px-space-xs py-0.5">
+              45 x 15 cm
+            </div>
+<div class="absolute inset-0 bg-surface-container-lowest/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-space-sm gap-space-xs">
+<button class="open-lightbox-btn w-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+<span>Ver Pantalla Completa</span>
+</button>
+<button class="quick-order-btn w-full bg-secondary-container text-on-secondary font-headline-sm text-label-sm uppercase tracking-wider py-space-xs flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Pedir este por WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface leading-tight">Pez Koi Ascendente</span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Irezumi Tradicional</span>
+<span class="text-primary font-bold">14 Días Fijación</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- APPLICATION PROTOCOL & INK SCIENCE STRIP -->
+<section class="w-full bg-surface-container-low px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<div class="p-space-md bg-surface-container flex flex-col gap-space-xs">
+<span class="font-display text-headline-md text-primary">01</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Colocación 90 Seg</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Limpia con alcohol, posiciona la lámina transfer y presiona con paño húmedo durante 90 segundos.</p>
+</div>
+<div class="p-space-md bg-surface-container flex flex-col gap-space-xs">
+<span class="font-display text-headline-md text-primary">02</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Oxidación Azul Jagua</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">El color inicial es translúcido. Reacciona con la queratina de la piel y alcanza máxima oscuridad en 24 a 36 horas.</p>
+</div>
+<div class="p-space-md bg-surface-container flex flex-col gap-space-xs">
+<span class="font-display text-headline-md text-primary">03</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">12 a 14 Días Clínicos</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sin brillo plástico. Luce como un tatuaje real con aguja bajo la dermis superficial, resistente a ducha diaria.</p>
+</div>
+<div class="p-space-md bg-surface-container flex flex-col gap-space-xs">
+<span class="font-display text-headline-md text-secondary">04</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Cero Dolor</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">100% orgánico, hipoalergénico y desvanecimiento progresivo natural sin dejar manchas ni cicatrices.</p>
+</div>
+</div>
+</section>
+<!-- BOTTOM CHECKOUT & PAYMENT NOTIFICATION DOCK -->
+<section class="w-full bg-surface-container-lowest px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-space-lg p-space-lg bg-surface-container">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 bg-primary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Transacciones Seguras</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface">Paga al Instante vía Yape o Plin</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Número oficial de depósitos del estudio: <strong class="text-on-surface font-semibold">947130790</strong> a nombre de <strong class="text-on-surface font-semibold">Samir Coronado</strong>. Envíos express a Lima Metropolitana en 24h y despachos diarios a provincias mediante Olva Courier y agencias Shalom.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md w-full lg:w-auto">
+<button class="flex-1 lg:flex-initial bg-surface-container-high hover:bg-surface-bright text-on-surface font-headline-sm text-label-md uppercase tracking-wider px-space-lg py-space-md flex items-center justify-center gap-space-xs transition-colors" id="summaryViewCartBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span>Ver Mi Carrito (<span id="cartCounter">0</span>)</span>
+</button>
+<a class="flex-1 lg:flex-initial bg-primary-container hover:bg-primary-fixed text-on-primary-container hover:text-on-primary font-headline-sm text-label-md uppercase tracking-wider px-space-lg py-space-md flex items-center justify-center gap-space-xs transition-colors shadow-md" href="https://wa.me/51947130790?text=Hola%20AaronInk,%20quiero%20confirmar%20mi%20pedido%20del%20Cat%C3%A1logo%20de%20Brazo%20Completo" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Finalizar por WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- LIGHTBOX / FULLSCREEN INSPECTOR MODAL (Z-3 Technical Overlay) -->
+<div aria-modal="true" class="fixed inset-0 z-50 hidden bg-surface-container-lowest/98 backdrop-blur-md flex flex-col justify-between p-space-md md:p-space-lg" id="tattooLightbox" role="dialog">
+<!-- Top Bar inside Lightbox -->
+<div class="w-full flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="inline-block w-2.5 h-2.5 bg-primary"></span>
+<span class="font-display text-headline-sm uppercase text-primary tracking-wider" id="lbDesignCode">#BRAZO-01</span>
+<span class="text-outline hidden sm:inline">·</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface hidden sm:inline truncate max-w-md" id="lbDesignTitle">Diseño Sleeve</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-outline hidden md:inline uppercase tracking-widest">[ESC o Botón para salir]</span>
+<button aria-label="Cerrar Visor" class="p-space-xs bg-surface-container-high hover:bg-surface-bright text-on-surface flex items-center justify-center transition-colors" id="closeLightboxBtn" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+</div>
+<!-- Center Stage: Giant High-Fidelity Image with Nav Arrows -->
+<div class="relative flex-1 flex items-center justify-center overflow-hidden my-space-xs">
+<button aria-label="Diseño Anterior" class="absolute left-space-xs md:left-space-md z-20 p-space-sm bg-surface-container-high/80 hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-colors" id="prevDesignBtn" type="button">
+<span class="material-symbols-outlined text-[32px]">arrow_back_ios_new</span>
+</button>
+<div class="relative max-h-full max-w-full flex flex-col items-center justify-center">
+<img class="max-h-[716px] md:max-h-[798px] w-auto object-contain shadow-2xl" data-alt="Large inspectable high-resolution black tattoo sleeve flash template specimen displayed in full screen view." id="lbMainImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNp15YpA-_3z9rLDZicecEJcX9s8dJcgzWDk7BKLqnTejKStrhXsuFlfa9w68NEFyIidCA7WCDEt2Ap1j4TJmu9NqEfpM3A-pUA-W13oNlmW8aykgtN-fr7L3G95kNkMTgdnG06qul326xrOHlqjgUKtUXfQkM5pBKW7vhe2OizaQZ9Hxf3-WLiyJoSJmOlOHQRr3iEa6JIpviVh9tmailF_Eh_Vxj0OyKP4LT2h0"/>
+<!-- Floating Spec Tag on Lightbox -->
+<div class="mt-space-xs flex items-center gap-space-md bg-surface-container-low px-space-md py-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface" id="lbDesignDims">48 x 17 cm</span>
+<span class="text-outline">|</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary" id="lbDesignStyle">Irezumi Japonés</span>
+</div>
+</div>
+<button aria-label="Siguiente Diseño" class="absolute right-space-xs md:right-space-md z-20 p-space-sm bg-surface-container-high/80 hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-colors" id="nextDesignBtn" type="button">
+<span class="material-symbols-outlined text-[32px]">arrow_forward_ios</span>
+</button>
+</div>
+<!-- Lightbox Bottom Conversion Action Bar -->
+<div class="w-full flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs bg-surface-container-low p-space-sm">
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<span>Captura o pide con un toque. Duración clínica garantizada: 12-14 días.</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<a class="w-full sm:w-auto bg-secondary-container hover:bg-secondary text-on-secondary font-headline-sm text-label-md uppercase tracking-wider px-space-md py-space-sm flex items-center justify-center gap-space-xs transition-colors shadow-sm" href="#" id="lbWhatsappOrderBtn" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Enviar captura de este diseño a WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Inline Micro-Interactions JavaScript -->
+<script>
+    (function initAaronInkCatalog() {
+      const cards = Array.from(document.querySelectorAll('.flash-card'));
+      const lightbox = document.getElementById('tattooLightbox');
+      const closeBtn = document.getElementById('closeLightboxBtn');
+      const prevBtn = document.getElementById('prevDesignBtn');
+      const nextBtn = document.getElementById('nextDesignBtn');
+      const lbCode = document.getElementById('lbDesignCode');
+      const lbTitle = document.getElementById('lbDesignTitle');
+      const lbDims = document.getElementById('lbDesignDims');
+      const lbStyle = document.getElementById('lbDesignStyle');
+      const lbImg = document.getElementById('lbMainImage');
+      const lbWhatsAppBtn = document.getElementById('lbWhatsappOrderBtn');
+      const cartCountEl = document.getElementById('cartCounter');
+      const addCatalogBtn = document.getElementById('addCatalogBtn');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      
+      let currentIndex = 0;
+      let cartCount = 0;
+
+      function updateLightboxContent(idx) {
+        if (!cards[idx]) return;
+        currentIndex = idx;
+        const card = cards[idx];
+        const code = card.dataset.code || '#BRAZO-XX';
+        const title = card.dataset.title || 'Diseño Manga';
+        const dims = card.dataset.dims || '45 x 15 cm';
+        const style = card.dataset.style || 'Blackwork';
+        const cardImg = card.querySelector('img');
+
+        lbCode.textContent = code;
+        lbTitle.textContent = title;
+        lbDims.textContent = dims;
+        lbStyle.textContent = style;
+        
+        if (cardImg) {
+          lbImg.src = cardImg.src;
+          lbImg.setAttribute('data-alt', cardImg.getAttribute('data-alt') || 'Tattoo flash specimen');
+        }
+
+        const encodedMsg = encodeURIComponent(`Hola AaronInk, quiero solicitar el diseño de brazo completo: ${code} - ${title} (${dims}). ¿Tienen disponibilidad inmediata?`);
+        lbWhatsAppBtn.href = `https://wa.me/51947130790?text=${encodedMsg}`;
+      }
+
+      function openLightbox(idx) {
+        updateLightboxContent(idx);
+        lightbox.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightbox.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+
+      cards.forEach((card, index) => {
+        const openBtn = card.querySelector('.open-lightbox-btn');
+        const img = card.querySelector('img');
+        const quickOrder = card.querySelector('.quick-order-btn');
+
+        if (openBtn) {
+          openBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openLightbox(index);
+          });
+        }
+
+        if (img) {
+          img.addEventListener('click', () => {
+            openLightbox(index);
+          });
+        }
+
+        if (quickOrder) {
+          quickOrder.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const code = card.dataset.code;
+            const title = card.dataset.title;
+            const text = encodeURIComponent(`Hola AaronInk, me interesa el diseño ${code} (${title}) del catálogo de Brazo Completo.`);
+            window.open(`https://wa.me/51947130790?text=${text}`, '_blank');
+          });
+        }
+      });
+
+      if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+      
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          const newIdx = (currentIndex - 1 + cards.length) % cards.length;
+          updateLightboxContent(newIdx);
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          const newIdx = (currentIndex + 1) % cards.length;
+          updateLightboxContent(newIdx);
+        });
+      }
+
+      window.addEventListener('keydown', (e) => {
+        if (lightbox.classList.contains('hidden')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') prevBtn && prevBtn.click();
+        if (e.key === 'ArrowRight') nextBtn && nextBtn.click();
+      });
+
+      // Filter handling
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.className = 'filter-btn bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider px-space-sm py-space-xs transition-colors';
+          });
+          btn.className = 'filter-btn bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider px-space-sm py-space-xs';
+
+          const filter = btn.dataset.filter;
+          cards.forEach(card => {
+            if (filter === 'all' || card.dataset.category === filter) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Add to Order Action Feedback
+      if (addCatalogBtn) {
+        addCatalogBtn.addEventListener('click', () => {
+          cartCount += 1;
+          if (cartCountEl) cartCountEl.textContent = cartCount;
+          
+          const originalText = addCatalogBtn.innerHTML;
+          addCatalogBtn.innerHTML = `<span class="material-symbols-outlined text-[20px]">check_circle</span><span>¡Catálogo Agregado (+1)!</span>`;
+          addCatalogBtn.classList.remove('bg-primary-container', 'text-on-primary-container');
+          addCatalogBtn.classList.add('bg-secondary-container', 'text-on-secondary');
+          
+          setTimeout(() => {
+            addCatalogBtn.innerHTML = originalText;
+            addCatalogBtn.classList.add('bg-primary-container', 'text-on-primary-container');
+            addCatalogBtn.classList.remove('bg-secondary-container', 'text-on-secondary');
+          }, 1800);
+        });
+      }
+
+      // Catalog Switcher Jump
+      const switcher = document.getElementById('catalogSwitcher');
+      if (switcher) {
+        switcher.addEventListener('change', (e) => {
+          const val = e.target.value;
+          if (val !== 'brazo') {
+            alert(`Cargando catálogo: ${val.toUpperCase()}. Redirigiendo a colección seleccionada...`);
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><aside class="fixed bottom-0 left-0 w-full z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-4px_16px_rgba(0,0,0,0.6)] py-space-sm px-margin md:px-margin-desktop"><div class="max-w-7xl mx-auto flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-3 h-3 bg-primary animate-pulse"></div><p class="font-label-md text-label-md text-on-surface uppercase tracking-wide"><span class="text-primary font-bold">0</span> catálogos en tu pedido <span class="text-outline hidden sm:inline">·</span> <span class="text-on-surface-variant hidden sm:inline">Ver pedido / Solicitar por WhatsApp</span></p></div><div class="flex items-center gap-space-sm"><a class="bg-primary-container hover:bg-primary-fixed text-on-primary-container hover:text-on-primary font-headline-sm text-label-md uppercase tracking-wider px-space-md py-space-xs rounded-none flex items-center gap-space-xs transition-colors" href="https://wa.me/51947130790?text=Hola%20AaronInk,%20quiero%20solicitar%20mi%20pedido" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">send</span><span>Pedir WhatsApp</span></a></div></div></aside><footer class="w-full bg-surface-container-lowest py-space-xl pb-24"><div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-3 gap-space-xl mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-sm uppercase text-on-surface">AaronInk Studio</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Estudio especializado en tatuajes semipermanentes de fórmula orgánica con duración clínica garantizada de 12 a 14 días. Cero dolor, máxima fidelidad.</p><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-high text-primary w-fit"><span class="material-symbols-outlined text-[16px]">verified</span><span class="font-label-sm text-label-sm uppercase tracking-wider">12-14 Días · Tintas seguras libres de dolor</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-wider">Pagos y Depósitos</h4><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><p><span class="text-on-surface font-semibold">Yape / Plin:</span> 947130790</p><p><span class="text-on-surface font-semibold">Titular:</span> Samir Coronado</p><p class="text-outline text-label-sm">Envíos a todo Lima y provincias vía Olva Courier y Shalom.</p></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-wider">Atención Directa</h4><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><p><span class="text-on-surface font-semibold">WhatsApp Estudio:</span> +51 983 753 468</p><p><span class="text-on-surface font-semibold">Horario:</span> Lunes a Sábado 9:00 AM - 8:00 PM</p><p class="text-outline text-label-sm">Asesoría de colocación y cuidados post-aplicación.</p></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-label-sm text-label-sm uppercase text-outline tracking-wider">© 2024 AaronInk. Todos los derechos reservados. Lima, Perú.</p><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Blackwork · Minimal · Neo-Traditional · Script</span></div></div></div></footer></body></html>

@@ -1,0 +1,6 @@
+{
+  "name": "AaronInk - Tatuajes Semipermanentes",
+  "description": "Atelier de tatuajes semipermanentes botánicos con duración clínica de 12 a 14 días. Catálogos flash, mapa corporal interactivo y pedidos por WhatsApp y Yape.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
