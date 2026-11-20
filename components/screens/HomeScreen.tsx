@@ -19,7 +19,7 @@ export default function HomeScreen() {
       {/* ==========================================
           HERO SECTION: INK FLASH STUDIO
       =========================================== */}
-      <section className="relative w-full overflow-hidden bg-[#050505] py-8 sm:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 border-b border-[#E63946]/35 max-h-[500px] sm:max-h-[550px] lg:max-h-[600px]">
+      <section className="relative w-full overflow-hidden bg-[#050505] py-8 sm:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 border-b border-[#E63946]/35 max-h-[600px] sm:max-h-[550px] lg:max-h-[600px]">
         {/* Decorative Coral Red Diagonal Brand Shape on Right Edge */}
         <div className="hidden lg:block absolute top-0 right-0 w-[260px] h-full bg-[#E63946]/15 coral-slash pointer-events-none" />
 
