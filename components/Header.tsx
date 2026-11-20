@@ -35,6 +35,8 @@ export default function Header({ onNavigateSection }: HeaderProps) {
             // Limpiar URL de parámetros y hash
             if (typeof window !== 'undefined') {
               window.history.pushState({}, '', window.location.pathname);
+              // Disparar evento custom para notificar el cambio
+              window.dispatchEvent(new Event('urlchange'));
             }
             setActiveScreen('home');
             window.scrollTo({ top: 0, behavior: 'smooth' });

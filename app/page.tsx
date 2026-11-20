@@ -17,17 +17,13 @@ function MainApp() {
   const [orderViewData, setOrderViewData] = useState<any>(null);
   const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
-    // Marcar que estamos en el cliente
-    setIsClient(true);
-
-    // Detectar si hay parámetros de orden en la URL
+  // Función para verificar URL
+  const checkUrlForOrder = () => {
     const params = new URLSearchParams(window.location.search);
     const orderParam = params.get('order');
 
     if (orderParam) {
       try {
-        // Decodificar base64
         const decoded = atob(orderParam);
         const orderData = JSON.parse(decoded);
         setOrderViewData(orderData);
@@ -36,25 +32,30 @@ function MainApp() {
         setOrderViewData(null);
       }
     } else {
-      // Si no hay parámetro de orden, asegurar que orderViewData sea null
       setOrderViewData(null);
     }
+  };
+
+  useEffect(() => {
+    setIsClient(true);
+    checkUrlForOrder();
   }, []);
 
-  // Escuchar cambios en la URL (cuando se limpia desde el Header)
+  // Escuchar cambios en la URL
   useEffect(() => {
-    const handlePopState = () => {
-      const params = new URLSearchParams(window.location.search);
-      const orderParam = params.get('order');
-      
-      if (!orderParam) {
-        setOrderViewData(null);
-        setActiveScreen('home');
-      }
+    const handleChange = () => {
+      checkUrlForOrder();
     };
 
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
+    window.addEventListener('popstate', handleChange);
+    
+    // Crear un custom event para cuando limpiemos manualmente la URL
+    window.addEventListener('urlchange', handleChange);
+    
+    return () => {
+      window.removeEventListener('popstate', handleChange);
+      window.removeEventListener('urlchange', handleChange);
+    };
   }, [setActiveScreen]);
 
   // Mientras no estemos en el cliente, mostrar loading
