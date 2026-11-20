@@ -30,16 +30,19 @@ export default function Header({ onNavigateSection }: HeaderProps) {
         {/* Brand Zone */}
         <div className="flex items-center gap-3">
           <button
-            onClick={() => setActiveScreen('home')}
-            className="flex items-center gap-3 text-left focus:outline-none cursor-pointer group"
+            onClick={() => {
+              setActiveScreen('home');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="flex items-center gap-3 text-left focus:outline-none cursor-pointer group relative z-10"
+            type="button"
+            aria-label="Volver al inicio"
           >
-            <div className="">
-              <img
-                alt="AaronInk Logo"
-                className="h-[106px] w-auto object-contain"
-                src="/assets/aistudio/logo.webp"
-              />
-            </div>
+            <img
+              alt="AaronInk Logo"
+              className="h-[106px] w-auto object-contain"
+              src="/assets/aistudio/logo.webp"
+            />
             <div className="flex flex-col">
               <span className="font-display text-2xl font-bold uppercase tracking-tight text-[#F4F1EA] group-hover:text-[#E63946] transition-colors duration-200 leading-none">
                 AaronInk<span className="text-[#E63946]">.</span>
