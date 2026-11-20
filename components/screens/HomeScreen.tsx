@@ -58,6 +58,7 @@ export default function HomeScreen() {
           </div>
 
           {/* Hero Sharp Actions (Solid Coral Red Primary) */}
+          <br></br><br></br><br></br>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-1 w-full sm:w-auto">
             <a
               className="w-full sm:w-auto px-8 py-4 rounded-[2px] bg-[#E63946] hover:bg-[#D62839] text-[#F4F1EA] font-bold text-sm sm:text-base uppercase tracking-wider text-center transition-colors duration-200 flex items-center justify-center gap-2"
@@ -70,23 +71,24 @@ export default function HomeScreen() {
 
           {/* Micro Specs Straight Cards */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 w-full pt-3">
-            <div className="p-3 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[70px]">
-              <span className="text-[9px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight">Fórmula Activa</span>
-              <span className="font-display text-sm sm:text-lg lg:text-xl uppercase text-[#F4F1EA] font-bold mt-1 leading-tight">Genipa Americana</span>
+            <div className="p-2.5 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[65px] justify-center">
+              <span className="text-[8px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight mb-0.5">Fórmula Activa</span>
+              <span className="font-display text-[11px] sm:text-lg lg:text-xl uppercase text-[#F4F1EA] font-bold leading-[1.1]">Genipa Americana</span>
             </div>
-            <div className="p-3 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[70px]">
-              <span className="text-[9px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight">Desarrollo</span>
-              <span className="font-display text-sm sm:text-lg lg:text-xl uppercase text-[#E63946] font-bold mt-1 leading-tight">24-36 Horas</span>
+            <div className="p-2.5 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[65px] justify-center">
+              <span className="text-[8px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight mb-0.5">Desarrollo</span>
+              <span className="font-display text-[11px] sm:text-lg lg:text-xl uppercase text-[#E63946] font-bold leading-[1.1]">24-36 Horas</span>
             </div>
-            <div className="p-3 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[70px]">
-              <span className="text-[9px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight">Resistencia</span>
-              <span className="font-display text-sm sm:text-lg lg:text-xl uppercase text-[#F4F1EA] font-bold mt-1 leading-tight">Agua y Sudor</span>
+            <div className="p-2.5 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[65px] justify-center">
+              <span className="text-[8px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight mb-0.5">Resistencia</span>
+              <span className="font-display text-[11px] sm:text-lg lg:text-xl uppercase text-[#F4F1EA] font-bold leading-[1.1]">Agua y Sudor</span>
             </div>
-            <div className="p-3 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[70px]">
-              <span className="text-[9px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight">Sensación</span>
-              <span className="font-display text-sm sm:text-lg lg:text-xl uppercase text-[#E63946] font-bold mt-1 leading-tight">Cero Dolor</span>
+            <div className="p-2.5 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[65px] justify-center">
+              <span className="text-[8px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight mb-0.5">Sensación</span>
+              <span className="font-display text-[11px] sm:text-lg lg:text-xl uppercase text-[#E63946] font-bold leading-[1.1]">Cero Dolor</span>
             </div>
           </div>
+          
         </div>
       </section>
 
@@ -101,7 +103,7 @@ export default function HomeScreen() {
               <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#E63946] px-3 py-1 rounded-[2px] bg-[#0C0C0E] border-b border-[#E63946]">
                 Archivos Flash Oficiales
               </span>
-              <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-[#F4F1EA] mt-4 leading-[0.96]">
+              <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-[#F4F1EA] mt-2 leading-[0.96]">
                 LOS 7 CATÁLOGOS REALES<span className="text-[#E63946]">.</span>
               </h2>
               <p className="font-body text-[#A6A29A] text-sm sm:text-base max-w-xl mt-3 leading-relaxed">
