@@ -26,7 +26,7 @@ export default function OrderViewScreen({ orderData }: OrderViewScreenProps) {
         if (design) {
           foundDesigns.push({
             ...design,
-            catalogName: catalog.name,
+            catalogName: catalog.title,
           });
         }
       });
