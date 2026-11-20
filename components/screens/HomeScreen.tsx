@@ -71,21 +71,21 @@ export default function HomeScreen() {
 
           {/* Micro Specs Straight Cards */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 w-full pt-3">
-            <div className="p-2.5 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[65px] justify-center">
+            <div className="p-2 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[60px] sm:min-h-[65px] justify-center">
               <span className="text-[8px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight mb-0.5">Fórmula Activa</span>
-              <span className="font-display text-[11px] sm:text-lg lg:text-xl uppercase text-[#F4F1EA] font-bold leading-[1.1]">Genipa Americana</span>
+              <span className="font-display text-[10px] sm:text-lg lg:text-xl uppercase text-[#F4F1EA] font-bold leading-[1.1]">Genipa Americana</span>
             </div>
-            <div className="p-2.5 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[65px] justify-center">
+            <div className="p-2 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[60px] sm:min-h-[65px] justify-center">
               <span className="text-[8px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight mb-0.5">Desarrollo</span>
-              <span className="font-display text-[11px] sm:text-lg lg:text-xl uppercase text-[#E63946] font-bold leading-[1.1]">24-36 Horas</span>
+              <span className="font-display text-[10px] sm:text-lg lg:text-xl uppercase text-[#E63946] font-bold leading-[1.1]">24-36 Horas</span>
             </div>
-            <div className="p-2.5 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[65px] justify-center">
+            <div className="p-2 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[60px] sm:min-h-[65px] justify-center">
               <span className="text-[8px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight mb-0.5">Resistencia</span>
-              <span className="font-display text-[11px] sm:text-lg lg:text-xl uppercase text-[#F4F1EA] font-bold leading-[1.1]">Agua y Sudor</span>
+              <span className="font-display text-[10px] sm:text-lg lg:text-xl uppercase text-[#F4F1EA] font-bold leading-[1.1]">Agua y Sudor</span>
             </div>
-            <div className="p-2.5 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[65px] justify-center">
+            <div className="p-2 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[60px] sm:min-h-[65px] justify-center">
               <span className="text-[8px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight mb-0.5">Sensación</span>
-              <span className="font-display text-[11px] sm:text-lg lg:text-xl uppercase text-[#E63946] font-bold leading-[1.1]">Cero Dolor</span>
+              <span className="font-display text-[10px] sm:text-lg lg:text-xl uppercase text-[#E63946] font-bold leading-[1.1]">Cero Dolor</span>
             </div>
           </div>
           
