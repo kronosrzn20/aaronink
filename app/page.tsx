@@ -35,8 +35,27 @@ function MainApp() {
         console.error('Error al decodificar orden:', error);
         setOrderViewData(null);
       }
+    } else {
+      // Si no hay parámetro de orden, asegurar que orderViewData sea null
+      setOrderViewData(null);
     }
   }, []);
+
+  // Escuchar cambios en la URL (cuando se limpia desde el Header)
+  useEffect(() => {
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const orderParam = params.get('order');
+      
+      if (!orderParam) {
+        setOrderViewData(null);
+        setActiveScreen('home');
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [setActiveScreen]);
 
   // Mientras no estemos en el cliente, mostrar loading
   if (!isClient) {

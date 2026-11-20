@@ -29,7 +29,13 @@ export default function Header({ onNavigateSection }: HeaderProps) {
       <div className="h-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
         {/* Brand Zone */}
         <button
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            // Limpiar URL de parámetros y hash
+            if (typeof window !== 'undefined') {
+              window.history.pushState({}, '', window.location.pathname);
+            }
             setActiveScreen('home');
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
