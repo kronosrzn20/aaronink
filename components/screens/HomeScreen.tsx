@@ -19,7 +19,7 @@ export default function HomeScreen() {
       {/* ==========================================
           HERO SECTION: INK FLASH STUDIO
       =========================================== */}
-      <section className="relative w-full overflow-hidden bg-[#050505] py-6 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8 border-b border-[#E63946]/35 max-h-[400px] sm:max-h-[450px] lg:max-h-[500px]">
+      <section className="relative w-full overflow-hidden bg-[#050505] py-8 sm:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 border-b border-[#E63946]/35 max-h-[500px] sm:max-h-[550px] lg:max-h-[600px]">
         {/* Decorative Coral Red Diagonal Brand Shape on Right Edge */}
         <div className="hidden lg:block absolute top-0 right-0 w-[260px] h-full bg-[#E63946]/15 coral-slash pointer-events-none" />
 
@@ -28,12 +28,12 @@ export default function HomeScreen() {
           <img
             src="/assets/aistudio/slider_h6_1_133626f3.jpg"
             alt="Tattooed artist portrait background"
-            className="w-full h-full object-cover object-[60%_center] sm:object-[65%_center] opacity-80 sm:opacity-85"
+            className="w-full h-full object-cover object-[60%_center] sm:object-[65%_center] opacity-90"
             referrerPolicy="no-referrer"
           />
-          {/* Gradientes muy suaves para máxima visibilidad */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#050505]/90 via-[#050505]/30 sm:via-transparent to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/70 via-transparent to-[#050505]/40" />
+          {/* Gradientes optimizados para móvil - más oscuros para mejor legibilidad */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/60 sm:via-[#050505]/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/90 via-[#050505]/50 to-[#050505]/60" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-start gap-4 sm:gap-5">
@@ -51,9 +51,9 @@ export default function HomeScreen() {
                 SEMIPERMANENTES<span className="text-[#E63946] animate-pulse">.</span>
               </span>
             </h1>
-            <p className="font-headline text-sm sm:text-base lg:text-lg uppercase tracking-wide text-[#F4F1EA] flex items-center gap-2.5 font-bold pb-2 border-b border-[#E63946] w-fit animate-fade-in-up animation-delay-200 text-shadow-soft">
-              <span className="material-symbols-outlined text-[20px] sm:text-[24px] text-[#E63946]">verified_user</span>
-              <span>DURAN 12-14 DÍAS · 100% INDOLORO Y REALISTA</span>
+            <p className="font-headline text-xs sm:text-base lg:text-lg uppercase tracking-wide text-[#F4F1EA] flex items-center gap-2 font-bold pb-2 border-b border-[#E63946] w-fit animate-fade-in-up animation-delay-200 text-shadow-soft">
+              <span className="material-symbols-outlined text-[16px] sm:text-[20px] text-[#E63946]">verified_user</span>
+              <span className="text-[10px] sm:text-base leading-tight">DURAN 12-14 DÍAS · 100% INDOLORO</span>
             </p>
           </div>
 
@@ -70,21 +70,21 @@ export default function HomeScreen() {
 
           {/* Micro Specs Straight Cards */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 w-full pt-3">
-            <div className="p-3 sm:p-4 rounded-[2px] bg-[#0C0C0E]/70 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200">
-              <span className="text-[10px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider">Fórmula Activa</span>
-              <span className="font-display text-base sm:text-lg lg:text-xl uppercase text-[#F4F1EA] font-bold mt-1.5">Genipa Americana 100%</span>
+            <div className="p-3 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[70px]">
+              <span className="text-[9px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight">Fórmula Activa</span>
+              <span className="font-display text-sm sm:text-lg lg:text-xl uppercase text-[#F4F1EA] font-bold mt-1 leading-tight">Genipa Americana</span>
             </div>
-            <div className="p-3 sm:p-4 rounded-[2px] bg-[#0C0C0E]/70 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200">
-              <span className="text-[10px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider">Desarrollo Tonal</span>
-              <span className="font-display text-base sm:text-lg lg:text-xl uppercase text-[#E63946] font-bold mt-1.5">24 a 36 Horas</span>
+            <div className="p-3 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[70px]">
+              <span className="text-[9px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight">Desarrollo</span>
+              <span className="font-display text-sm sm:text-lg lg:text-xl uppercase text-[#E63946] font-bold mt-1 leading-tight">24-36 Horas</span>
             </div>
-            <div className="p-3 sm:p-4 rounded-[2px] bg-[#0C0C0E]/70 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200">
-              <span className="text-[10px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider">Resistencia</span>
-              <span className="font-display text-base sm:text-lg lg:text-xl uppercase text-[#F4F1EA] font-bold mt-1.5">Agua, Sudor y Ducha</span>
+            <div className="p-3 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[70px]">
+              <span className="text-[9px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight">Resistencia</span>
+              <span className="font-display text-sm sm:text-lg lg:text-xl uppercase text-[#F4F1EA] font-bold mt-1 leading-tight">Agua y Sudor</span>
             </div>
-            <div className="p-3 sm:p-4 rounded-[2px] bg-[#0C0C0E]/70 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200">
-              <span className="text-[10px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider">Sensación</span>
-              <span className="font-display text-base sm:text-lg lg:text-xl uppercase text-[#E63946] font-bold mt-1.5">Cero Dolor ni Cicatriz</span>
+            <div className="p-3 sm:p-4 rounded-[2px] bg-[#0C0C0E]/90 backdrop-blur-sm border border-white/20 hover:border-[#E63946]/60 flex flex-col transition-colors duration-200 min-h-[70px]">
+              <span className="text-[9px] sm:text-[11px] uppercase font-semibold text-[#A6A29A] tracking-wider leading-tight">Sensación</span>
+              <span className="font-display text-sm sm:text-lg lg:text-xl uppercase text-[#E63946] font-bold mt-1 leading-tight">Cero Dolor</span>
             </div>
           </div>
         </div>
