@@ -28,31 +28,29 @@ export default function Header({ onNavigateSection }: HeaderProps) {
     <header className="fixed top-0 left-0 w-full z-50 bg-[#050505]/95 backdrop-blur-md border-b border-[#E63946]/35 shadow-[0_10px_40px_rgba(0,0,0,0.7),0_5px_15px_rgba(0,0,0,0.5)]">
       <div className="h-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
         {/* Brand Zone */}
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => {
-              setActiveScreen('home');
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-            className="flex items-center gap-3 text-left focus:outline-none cursor-pointer group relative z-10"
-            type="button"
-            aria-label="Volver al inicio"
-          >
-            <img
-              alt="AaronInk Logo"
-              className="h-[106px] w-auto object-contain"
-              src="/assets/aistudio/logo.webp"
-            />
-            <div className="flex flex-col">
-              <span className="font-display text-2xl font-bold uppercase tracking-tight text-[#F4F1EA] group-hover:text-[#E63946] transition-colors duration-200 leading-none">
-                AaronInk<span className="text-[#E63946]">.</span>
-              </span>
-              <span className="text-[11px] text-[#A6A29A] font-medium tracking-wide hidden sm:inline-block mt-0.5">
-                Tatuajes Semipermanentes · 12-14 Días
-              </span>
-            </div>
-          </button>
-        </div>
+        <button
+          onClick={() => {
+            setActiveScreen('home');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          className="flex items-center gap-3 text-left focus:outline-none cursor-pointer group shrink-0"
+          type="button"
+          aria-label="Volver al inicio"
+        >
+          <img
+            alt="AaronInk Logo"
+            className="h-16 sm:h-20 lg:h-[106px] w-auto object-contain"
+            src="/assets/aistudio/logo.webp"
+          />
+          <div className="flex flex-col">
+            <span className="font-display text-xl sm:text-2xl font-bold uppercase tracking-tight text-[#F4F1EA] group-hover:text-[#E63946] transition-colors duration-200 leading-none">
+              AaronInk<span className="text-[#E63946]">.</span>
+            </span>
+            <span className="text-[10px] sm:text-[11px] text-[#A6A29A] font-medium tracking-wide hidden sm:inline-block mt-0.5">
+              Tatuajes Semipermanentes · 12-14 Días
+            </span>
+          </div>
+        </button>
 
         {/* Navigation Zone - Desktop */}
         <nav className="hidden lg:flex items-center gap-1">
