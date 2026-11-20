@@ -58,8 +58,7 @@ export default function HomeScreen() {
           </div>
 
           {/* Hero Sharp Actions (Solid Coral Red Primary) */}
-          <br></br><br></br><br></br>
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-1 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-16 sm:pt-20 lg:pt-8 w-full sm:w-auto">
             <a
               className="w-full sm:w-auto px-8 py-4 rounded-[2px] bg-[#E63946] hover:bg-[#D62839] text-[#F4F1EA] font-bold text-sm sm:text-base uppercase tracking-wider text-center transition-colors duration-200 flex items-center justify-center gap-2"
               href="#catalogos-grid"
