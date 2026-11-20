@@ -70,23 +70,22 @@ export default function CheckoutScreen() {
         ? cart.map((c, idx) => `${idx + 1}. ${c.title}`).join('\n')
         : '(Consulta general de catalogo)';
 
-    let message = `Hola! 👋 Quiero consultar sobre estos tatuajes semipermanentes:\n\n`;
-    message += `*Mi nombre:* ${clientName.trim()}\n`;
+    let message = `Hola! Me gustaron estos diseños de la web 👋\n\n`;
+    message += `*Nombre:* ${clientName.trim()}\n`;
     message += `*Entrega:* ${deliveryText}\n`;
 
     if (deliveryMode === 'shalom' && shalomAgency.trim()) {
       message += `*Ciudad/Agencia:* ${shalomAgency.trim()}\n`;
     }
 
-    message += `\n*Diseños que me interesan:*\n${catalogListString}\n`;
+    message += `\n*Los diseños que me gustan:*\n${catalogListString}\n`;
 
     if (orderNotes.trim()) {
-      message += `\n*Consulta:*\n${orderNotes.trim()}\n`;
+      message += `\n*Consulta adicional:*\n${orderNotes.trim()}\n`;
     }
 
-    message += `\n📸 *Aqui puedes ver las fotos de los diseños:*\n`;
-    message += `${orderUrl}\n\n`;
-    message += `Espero tu respuesta para coordinar! 😊`;
+    message += `\n📸 *Fotos:* ${orderUrl}\n\n`;
+    message += `Cuando puedas me das mas info! Gracias 😊`;
 
     const encoded = encodeURIComponent(message);
     const waUrl = `https://wa.me/${STUDIO_DATA.phone}?text=${encoded}`;
